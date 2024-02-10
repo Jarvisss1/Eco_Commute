@@ -1,7 +1,6 @@
 import React from "react";
-import { Routes, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./homePage.css";
-import DashboardPage from "./DashBoardPage";
 
 const HomePage = () => {
   return (

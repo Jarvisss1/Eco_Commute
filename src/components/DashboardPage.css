@@ -1,10 +1,21 @@
+/* DashboardPage.css */
+
 .dashboard-page {
     text-align: center;
     padding: 50px;
+    color: #333;
+    background-color: #f8f9fa;
+    /* Set background color */
+    border-radius: 20px;
+    /* Add border radius for a card-like appearance */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    /* Add box shadow for depth */
+    background-image: linear-gradient(to right, #FFC371, #FF5F6D);
+    /* Add gradient background */
 }
 
 .dashboard-page h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 30px;
 }
 
@@ -17,18 +28,47 @@
 .dashboard-content {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .dashboard-item {
     margin: 0 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dashboard-item:hover {
+    transform: translateY(-5px);
 }
 
 .dashboard-item h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 10px;
 }
 
 .dashboard-item p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+/* Additional content styles */
+.additional-content {
+    margin-top: 50px;
+    background-color: rgb(200, 200, 95);
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.additional-content h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.additional-content p {
     font-size: 1.2rem;
     line-height: 1.6;
+    margin-bottom: 20px;
 }

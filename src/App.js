@@ -4,6 +4,7 @@ import "./components/navbar.css";
 import HomePage from './components/HomePage';
 import logo from './components/tasveer/Logo.jpg';
 import DashboardPage from './components/DashBoardPage';
+import Signup from './components/SignUp';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = React.useState(false);
@@ -67,6 +68,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<DashboardPage />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
