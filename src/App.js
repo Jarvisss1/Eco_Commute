@@ -5,6 +5,8 @@ import HomePage from './components/HomePage';
 import logo from './components/tasveer/Logo.jpg';
 import DashboardPage from './components/DashBoardPage';
 import Signup from './components/SignUp';
+import Login from './components/Login';
+import Register from './components/Register';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = React.useState(false);
@@ -60,7 +62,8 @@ const Contact = () => <h2>You are in the Contact</h2>;
 const App = () => {
   return (
     <BrowserRouter>
-      <Navbar />
+    <Navbar />
+      
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/carPool" element={<CarPool />} />
@@ -69,6 +72,8 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>
   );

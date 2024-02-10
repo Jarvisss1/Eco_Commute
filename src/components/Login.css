@@ -1,0 +1,131 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(500px);
+    /* Adjust the opacity as needed */
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./tasveer/bg.jpg');
+    background-size: auto;
+    background-repeat: space;
+    filter: blur(4px);
+    /* Increase blur intensity */
+    z-index: -1;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(70, 2, 2, 0.6);
+    /* Increase transparency */
+    backdrop-filter: blur(500px);
+    /* Increase blur intensity */
+}
+
+.blurry-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    /* Increase blur intensity */
+}
+
+
+
+/* Remaining styles remain unchanged */
+
+
+
+.login-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.login-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 15px;
+}
+
+.login-form .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.login-form .checkbox-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-form a {
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.login-form button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(70, 2, 2, 0.6);
+    /* Increase transparency */
+    backdrop-filter: blur(50px);
+    /* Increase blur intensity */
+}
+
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 25px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
