@@ -36,8 +36,8 @@ function Login() {
           </form>
           <p>
             Don't have an account?
-            <NavLink to="/register" >
-              Register
+            <NavLink to="/signup" >
+              Sign Up
             </NavLink>
           </p>
         </div>

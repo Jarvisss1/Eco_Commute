@@ -10,7 +10,7 @@
     /* Add border radius for a card-like appearance */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     /* Add box shadow for depth */
-    background-image: linear-gradient(to right, #FFC371, #FF5F6D);
+    background-image: linear-gradient(to bottom right, #b6ab92, #c1ab87);
     /* Add gradient background */
 }
 

@@ -1,0 +1,115 @@
+/* Global styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Contact Us section styles */
+.contact-us {
+    padding: 50px 0;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f2f5;
+    /* Light background */
+}
+
+.contact-info {
+    width: 40%;
+    padding: 30px;
+    background-color: #fff;
+    /* White background for info */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-details li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-details i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #333;
+    /* Adjust icon color */
+}
+
+.contact-details span {
+    font-size: 16px;
+    color: #666;
+    /* Adjust text color */
+}
+
+.contact-form {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+    /* White background for form */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+    /* Adjust label color */
+}
+
+.form-group input,
+.form-group textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    /* Adjust border color */
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    /* Adjust button color */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #0069d9;
+    /* Adjust button hover color */
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .contact-us {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

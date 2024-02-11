@@ -2,8 +2,10 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./homePage.css";
 import VehicleDetails from "./VehicleDetails";
+import RewardCard from './RewardCard';
 
 const HomePage = () => {
+  const rewardPoints = 100;
   return (
     <>
       <div className="homepage">
@@ -14,7 +16,7 @@ const HomePage = () => {
             choosing eco-friendly options.
           </p>
           <NavLink to="/login" className="hero-button">
-            Get Started
+            Login Now !
           </NavLink>
         </div>
         <div className="features">
@@ -49,7 +51,11 @@ const HomePage = () => {
             Sign Up Now
           </NavLink>
         </div>
+        <div className="low">
+
         <VehicleDetails />
+        <RewardCard points={rewardPoints} />
+        </div>
       </div>
     </>
   );

@@ -1,6 +1,8 @@
+// VehicleDetails.jsx
+
 import React, { useState } from "react";
 import axios from "axios";
-import { log } from "util";
+import "./VehicleDetails.css"; // Import CSS file
 
 function VehicleDetails() {
   const [vehicleNumber, setVehicleNumber] = useState("");
@@ -37,20 +39,33 @@ function VehicleDetails() {
   };
 
   return (
-    <div>
-      <h2>Enter Vehicle Number:</h2>
-      <form onSubmit={handleSubmit}>
-        <input type="text" value={vehicleNumber} onChange={handleChange} />
-        <button type="submit">Get Details</button>
+    <div className="vehicle-details-container">
+      <h2>Enter Vehicle Number </h2>
+      <h2>for PUC Update:</h2>
+      <p>Example: GJ01RT1234</p>
+      <form className="form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          value={vehicleNumber}
+          onChange={handleChange}
+          className="input"
+        />
+        <button type="submit" className="button">
+          Get Details
+        </button>
       </form>
-      {error && <p>Error: {error}</p>}
+      {error && <p className="error">Error: {error}</p>}
       {details && (
-        <div>
-          <h3>Vehicle Details:</h3>
-          <p>Registration Number: {details.rc_regn_no}</p>
-          <p>Owner Name: {details.rc_owner_name}</p>
-          <p>Registration Date: {details.rc_regn_dt}</p>
-          {/* Add more details as needed */}
+        <div className="card">
+          <div className="card-body">
+            <h3 className="card-title">Vehicle Details:</h3>
+            <p className="card-text">
+              Registration Number: {details.rc_regn_no}
+            </p>
+            <p className="card-text">Owner Name: {details.rc_owner_name}</p>
+            <p className="card-text">Registration Date: {details.rc_regn_dt}</p>
+            {/* Add more details as needed */}
+          </div>
         </div>
       )}
     </div>

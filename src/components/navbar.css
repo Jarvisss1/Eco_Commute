@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-color: #fcfcfc;
+    background-color: #6a2424;
+    background-image: linear-gradient(to bottom right, #b6ab92, #c1ab87);
 }
 
 .container {
@@ -19,7 +20,8 @@ body {
 
 .navbar {
     height: 60px;
-    background-color: #fef7e5;
+    background-color: transparent;
+    /* Change background color to transparent */
     position: relative;
 }
 
@@ -49,11 +51,12 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #2f234f;
+    font-weight: 600;
     text-decoration: none;
 }
 
 .nav-elements ul a.active {
-    color: #574c4c;
+    color: #dac3c3;
     font-weight: 500;
     position: relative;
 }
@@ -105,4 +108,3 @@ body {
         margin-top: 22px;
     }
 }
-

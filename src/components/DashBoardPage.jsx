@@ -5,7 +5,7 @@ import CarbonCalculator from "./CarbonCalculator";
 const DashboardPage = () => {
   // Mock user data
   const userData = {
-    username: "JohnDoe",
+    username: "Jane Doe",
     carbonEmission: "120 kg",
   };
 

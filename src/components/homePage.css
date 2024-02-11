@@ -1,98 +1,79 @@
-/* 
 
-.container {
-    max-width: 800px;
-    
-    margin: 0 auto;
-    padding: 20px;
-}
-
-
-
-.card-container {
-    background-color: #ffffff;
-    border: 2px solid #007bff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-}
-
-.emission-value {
-    font-size: 24px;
-    font-weight: bold;
-    color: #007bff;
-}   */
 .homepage {
     text-align: center;
-    padding: 50px;
+    padding: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
 }
 
 .hero {
+    margin-top: 30px;
     background-color: #f0f0f0;
-    padding: 50px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
-
-.hero-title {
-    font-size: 3rem;
     margin-bottom: 20px;
-}
-
-.hero-description {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
-
-.hero-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
+    /* Add some spacing */
 }
 
 .features {
     display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+    flex-wrap: wrap;
+    /* Allow features to wrap to the next line */
+    justify-content: center;
+    /* Center features horizontally */
+    gap: 20px;
+    /* Add some spacing between features */
+    margin-top: 20px;
 }
 
 .feature {
     flex: 1;
-    margin: 0 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.feature:hover {
-    transform: translateY(-5px);
-}
-
-.feature h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-.feature p {
-    font-size: 1.4rem;
-    line-height: 1.6;
-    color: #555;
+    padding: 20px;
+    margin: 10px;
+    /* Add some margin around each feature */
+    max-width: 300px;
+    /* Limit maximum width of features */
 }
 
 .cta {
-    margin-top: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    /* Add some padding at the bottom */
 }
 
 .cta p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    /* Reduce margin-bottom */
+}
+
+@media screen and (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+        /* Decrease font size for smaller screens */
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+        /* Decrease font size for smaller screens */
+    }
+
+    .hero-button {
+        font-size: 1rem;
+        /* Decrease font size for smaller screens */
+    }
+
+    .feature {
+        flex-basis: calc(50% - 20px);
+        /* Show two features per row */
+        max-width: none;
+        /* Allow features to take full width */
+    }
 }
 
 .cta-button {
@@ -104,4 +85,37 @@
     border: none;
     border-radius: 5px;
     text-decoration: none;
+}
+
+.reward-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the card */
+    text-align: center;
+    /* Center text */
+
+}
+
+.reward-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.reward-card p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.low{
+    display: flex;
+    justify-content:space-between;    
+    align-items: center;
+    
 }

@@ -2,11 +2,14 @@ import React from 'react';
 import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import "./components/navbar.css";
 import HomePage from './components/HomePage';
-import logo from './components/tasveer/Logo.jpg';
+import logo from './components/tasveer/logo_final.png';
 import DashboardPage from './components/DashBoardPage';
 import Signup from './components/SignUp';
 import Login from './components/Login';
 import Register from './components/Register';
+import Footer from './components/Footer';
+import About from './components/AboutPage';
+import ContactUs from './components/ContactUs';
 
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = React.useState(false);
@@ -17,7 +20,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" style={{ backgroundColor: "#6f7425", position: 'fixed', top: 0, width: '100%', zIndex: 1000 ,color : "snow", fontWeight : "bold"}}>
         <div className="container">
           <div className="logo">
             <img src={logo} className='logo' alt="Logo" />
@@ -30,12 +33,7 @@ const Navbar = () => {
               <li>
                 <NavLink to="/">Home</NavLink>
               </li>
-              <li>
-                <NavLink to="/carPool">Car Pool</NavLink>
-              </li>
-              <li>
-                <NavLink to="/publicTransport">Public Transport</NavLink>
-              </li>
+              
               <li>
                 <NavLink to="/about">About</NavLink>
               </li>
@@ -47,34 +45,34 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
+          {/* Add username here */}
+          <div className="username">
+            Jane Doe
+          </div>
         </div>
       </nav>
     </>
   );
 };
 
-const Home = () => <div><h2>You are in the HomePage</h2></div>;
-const CarPool = () => <h2>You are in the Car Pool</h2>;
 const PublicTransport = () => <h2>You are in the Public Transport</h2>;
-const About = () => <h2>You are in the About</h2>;
+//const About = () => <h2>You are in the About</h2>;
 const Contact = () => <h2>You are in the Contact</h2>;
 
 const App = () => {
   return (
     <BrowserRouter>
     <Navbar />
-      
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/carPool" element={<CarPool />} />
-        <Route path="/publicTransport" element={<PublicTransport />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} /> 
+        <Route path="/contact" element={<ContactUs/>} />
         <Route path="/dashboard" element={<DashboardPage />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
